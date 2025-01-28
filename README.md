@@ -70,8 +70,8 @@ CoRE-1　オートタレットに関する情報をまとめています．
 | 撹拌機構取り付け用ネジ（M5*15）　| 8個 | 
 | オートレフェリーユニット取り付け用ネジ（M5*10）　| 2個 | 
 | ボール　| 50個（個数は変動する場合がございます） |
-| ダメージパネル　(オートタレット単体チームのみ)　| 1枚 | 
-| ダメージパネル用USB MicroBケーブル　(オートタレット単体チームのみ)　| 1本 | 
+| ダメージパネル　| 1枚 | 
+| ダメージパネル用モバイルバッテリー　| 1個 | 
 
 ## PC一式
 | 品名 | 数量 |
@@ -136,8 +136,8 @@ CoRE-1　オートタレットに関する情報をまとめています．
 <img src="fig/f6.jpg" width="500">
 
 
-# ダメージパネルの発光色設定(オートタレット単体で参加申込したチームのみ)
-[damagePanelDemo.ino](https://github.com/scramble-robot/CoRE_AutoRobot_2024_general/tree/main/damagePanelDemo)の8-11行目にある任意のLEDColorのコメントアウトを解除し，ダメージパネルに取り付けられたArduinoMicroに書き込む
+# ダメージパネルの発光色設定
+[damagePanelDemo.ino](https://github.com/scramble-robot/CoRE_AutoRobot_2024_general/tree/main/damagePanelDemo)の8-11行目にある任意のLEDColorのコメントアウトを解除し，ダメージパネルに取り付けられたArduinoNanoに書き込む
 ```
 /*------Set LED color------*/
 uint32_t LEDColor= pixels.Color(255, 0, 0); //Red
