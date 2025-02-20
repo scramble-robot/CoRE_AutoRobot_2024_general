@@ -2,7 +2,8 @@
 CoRE-1　オートタレットに関する情報をまとめています．
 - [Raspberry Piのファームウェア](https://github.com/scramble-robot/CoRE_AutoRobot_2024_raspberrypi)
 - [サンプルプログラム](https://github.com/scramble-robot/CoRE_AutoRobot_2024_sample)
-- [CADデータ](https://a360.co/3MP85G7)
+- [CADデータ(動作時)](https://a360.co/43bM4tQ)
+- [CADデータ(輸送時)](https://a360.co/3CP5mL7)
 
 # SPEC
 ## サイズ
@@ -18,12 +19,12 @@ CoRE-1　オートタレットに関する情報をまとめています．
 <img src="fig/f8.jpg" width="300">
 
 ## 使用カメラ
-- [Realsense D455](https://www.intelrealsense.com/depth-camera-d455/)
+- [RealSense&trade; D455](https://www.intelrealsense.com/depth-camera-d455/)
 - ロボット視点イメージ
 
     [![image](https://img.youtube.com/vi/nvyRWckMJ-0/0.jpg)](https://www.youtube.com/watch?v=nvyRWckMJ-0)
 
-## 使用Lidar
+## 使用測域センサ
 - [UST-30LX](https://www.hokuyo-aut.co.jp/search/single.php?serial=195)
 
 ## Pitch軸
@@ -91,9 +92,13 @@ CoRE-1　オートタレットに関する情報をまとめています．
 # セットアップ手順
 1. 下図の2個所のリピートタイを外し，上部フレームと下部フレームを分離させる．このとき外したリピートタイは後で使用する．
 
-    **⚠️上部フレームがLidarにぶつかって破損しないように慎重に取り外すこと⚠️** 
+    **⚠️上部フレームが測域センサにぶつかって破損しないように慎重に取り外すこと⚠️** 
 
     <img src="fig/f1.jpg" width="500">
+
+1. 下図の黄色で示されたジンバル固定用パーツを左右ともに取り外す．取り外す際は下図右側の3個所のネジを外す
+
+    <img src="fig/f13.jpg" width="500">
 
 1. 下図の6箇所のリピートタイを緩め，弾倉接続用パーツを取り外す．リピートタイは弾倉接続用に取り付けたままにする．
 
@@ -128,11 +133,11 @@ CoRE-1　オートタレットに関する情報をまとめています．
 1. [CoRE_AutoRobot_2024_sample](https://github.com/scramble-robot/CoRE_AutoRobot_2024_sample)に従って動作確認を行う．
 
 # 発送時梱包手順
-1. ジンバル，スイッチングハブ，回路，Lidar，バッテリーを緩衝材で梱包する．
-
 1. 組み立て手順を逆順で行う．
 
     **⚠️分解の際にサーボのコネクタを外し忘れないように注意すること⚠️**
+
+1. ジンバル，スイッチングハブ，回路，測域センサ，バッテリーを緩衝材で梱包する．
 
 # タイミングベルトのテンション調整
 下図に示す4個所のM5ボルトを緩め，モータが取り付けられている板金を引っ張ってテンションを調整する．
